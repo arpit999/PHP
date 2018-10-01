@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<!--
+Student ID: 000762465
+Name: Arpit Patel
+Date: 16/09/2018
+This is the index file where the project start from and it will include design where user can give their data.
+
+-->
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Assignment 1</title>
+
+    <style> 
+
+        form{
+            margin: 50px;
+        }
+
+        label {
+            color: #B4886B;
+            font-weight: bold;
+            margin-bottom: 2px;
+        }
+
+        input[type=number] {padding:10px; 
+                            border:2px solid #ccc; 
+                            margin-bottom: 10px;
+                            -webkit-border-radius: 5px;
+                            border-radius: 5px;
+                            width: 310px;
+        }
+
+        input[type=number]:focus {border-color:#333; 
+               margin-bottom: 10px; }
+
+        input[type=submit] {padding:15px 15px; background:#B4886B; border:0 none;
+                            cursor:pointer;
+                            -webkit-border-radius: 5px;
+                            border-radius: 5px;
+                            color: blueviolet;
+                            font-size: 17px;
+                            border:2px solid #ccc;
+                            background-color: #f2f2f2;}
+        
+        label{
+            font-size: 19px;
+        }
+
+        fieldset{
+            width: 40%;
+            display: inline-block;
+            border: 3px solid rgb(66, 244, 104);
+            padding-left: 30px;
+            padding-top: 30px;
+            padding-bottom:  30px;
+        }
+        
+    </style>
+</head>
+
+<body>
+
+
+    <form action="response.php" method="GET">
+        <fieldset>
+            <legend>Temperature Converter</legend>
+
+            <label>Start Temperature</label> <br><input type="number" placeholder="Minimum Temperature" name="startTemperature" required=""/> <br>
+            <label>End Temperature</label> <br><input type="number" placeholder="Maximum Temperature" name="endTemperature" required=""/> <br>
+            <label>Step Increase</label> <br><input type="number" placeholder="Step Increase" name="skipTemperature" required=""/> <br><br>
+
+            <label></label> <input type="radio" name="conversionType" value="Celsius to Fahrenheit" checked>Celsius to Fahrenheit<br>
+            <label></label> <input type="radio" name="conversionType" value="Fahrenheit to Celsius" >Fahrenheit to Celsius<br> <br><br>
+
+            <input type="submit" value="Convert"/>
+
+
+        </fieldset>
+    </form>
+
+
+</body>
+</html>
+
+
+
